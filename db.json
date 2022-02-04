@@ -1,0 +1,7 @@
+{
+    "posts":[
+        { "id":"Msw001", "name":"A sample post" },
+        { "id":"Msw002", "name":"A post about RTK Query" },
+        { "id":"Msw003", "name":"How to randomly throw errors, a novella" }
+    ]
+}

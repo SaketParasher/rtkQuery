@@ -1,12 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { setupListeners } from '@reduxjs/toolkit/query'
 import { pokemonApi } from './services/pokemon';
+import { postsApi } from './services/posts';
 import counterReducer from './features/counter/counterSlice';
 
 export const store = configureStore({
     reducer:{
         counter:counterReducer,
-        [pokemonApi.reducerPath]:pokemonApi.reducer
+        [pokemonApi.reducerPath]:pokemonApi.reducer,
+        [postsApi.reducerPath]:postsApi.reducer
     },
     // Adding the api middleware enables caching, invalidation, polling,
     // and other useful features of `rtk-query`.

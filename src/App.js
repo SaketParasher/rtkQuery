@@ -4,6 +4,7 @@ import FetchPokemon from './features/pokemon/FetchPokemon';
 import Caching from './features/pokemon/Caching';
 import { useEffect, useState } from 'react';
 
+
 const pokemon = ['bulbasaur', 'pikachu', 'ditto', 'bulbasaur'];
 
 function App() {
@@ -40,6 +41,8 @@ function App() {
       <h2>Refetching and Caching</h2>
       <div> <button onClick={e => setCachePoke(prev => [...prev,'bulbasaur'])}>Add Bulbasaur</button></div>
       {cachePoke.map((name,index) => <Caching key={index} name={name} />)}
+      <div style={{width:'100%',float:'right'}}><hr/></div>
+      <div style={{float:'unset'}}>SEPERATOR</div>
       
     </div>
     
